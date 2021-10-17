@@ -52,8 +52,6 @@ p {
 .far {
   font-size: 40px;
   width: 40px;
-  display: block;
-  margin: auto;
   color: darkslategray;
 }
 
@@ -71,9 +69,39 @@ p {
   margin-top: 40px;
 }
 
+.favouriteContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 80%;
+  margin: auto;
+  grid-gap: 40px;
+  margin-top: 40px;
+}
+
 .article {
   padding: 10%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button {
+  font-size: 22px;
+  color: white;
+  background-color: darkslategray;
+  border: none;
+  height: 60px;
+  margin-left: 10%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.message {
+  font-size: 20px;
+  background-color: #ffc107;
+  width: 350px;
+  padding: 15px 0px 15px 10px;
+  color: white;
 }
 
 .loader {
